@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>aiboy560</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <h1>🤖 aiboy560</h1>
+    <p class="subtitle">Your friendly voice assistant</p>
+
+    <section class="robot" aria-label="aiboy560">
+      <div class="antenna"></div>
+      <div class="head">
+        <div class="eye left"></div>
+        <div class="eye right"></div>
+        <div class="mouth"></div>
+      </div>
+      <div class="body"></div>
+    </section>
+
+    <div id="status">Ready!</div>
+    <div id="answer">Hi! I'm aiboy560. I can listen, talk, and respond to simple commands.</div>
+
+    <div class="buttons">
+      <button id="listenBtn">🎤 Talk to aiboy560</button>
+      <button id="speakBtn">🔊 Speak</button>
+      <button id="cameraBtn">📷 Let aiboy560 see</button>
+    </div>
+
+    <video id="camera" autoplay playsinline hidden></video>
+
+    <p class="hint">Try saying: “hello”, “what time is it?”, “open YouTube”, or “tell me a joke”.</p>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

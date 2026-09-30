@@ -1,0 +1,38 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #101936, #263b75);
+  color: white;
+  display: grid;
+  place-items: center;
+}
+.app {
+  width: min(92%, 620px);
+  text-align: center;
+  padding: 30px 20px;
+}
+h1 { font-size: 42px; margin: 0 0 5px; }
+.subtitle { margin-top: 0; opacity: .8; }
+.robot { position: relative; height: 230px; margin: 20px auto; }
+.antenna { width: 8px; height: 35px; background: white; margin: auto; border-radius: 8px; }
+.antenna::before { content: ""; display: block; width: 18px; height: 18px; background: #61dafb; border-radius: 50%; position: relative; left: -5px; top: -8px; }
+.head {
+  width: 190px; height: 135px; margin: auto; background: #dfe9ff;
+  border-radius: 35px; position: relative; box-shadow: 0 12px 30px #0005;
+}
+.eye { position: absolute; top: 42px; width: 28px; height: 38px; background: #18264f; border-radius: 50%; }
+.eye.left { left: 42px; } .eye.right { right: 42px; }
+.mouth { position: absolute; width: 70px; height: 18px; border-bottom: 5px solid #18264f; border-radius: 50%; left: 60px; top: 83px; }
+.body { width: 125px; height: 70px; margin: -2px auto 0; background: #8fa8df; border-radius: 20px 20px 35px 35px; }
+#status { font-weight: bold; margin: 10px; }
+#answer { min-height: 70px; background: #ffffff15; border-radius: 18px; padding: 18px; line-height: 1.5; }
+.buttons { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; margin: 18px 0; }
+button {
+  border: 0; border-radius: 14px; padding: 13px 17px; font-size: 16px;
+  cursor: pointer; background: white; color: #18264f;
+}
+button:hover { transform: translateY(-1px); }
+#camera { width: min(100%, 480px); border-radius: 18px; margin-top: 10px; }
+.hint { opacity: .75; font-size: 14px; }
